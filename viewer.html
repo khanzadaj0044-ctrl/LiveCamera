@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Camera Viewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Camera Viewer 💻</h1>
+        <p>Enter the same room code as the camera device.</p>
+
+        <input
+            id="roomCode"
+            type="text"
+            placeholder="Enter room code"
+            autocomplete="off"
+        >
+
+        <video id="remoteCamera" autoplay playsinline controls></video>
+
+        <button id="connectViewer">Connect to Camera</button>
+
+        <p id="status">Waiting to connect...</p>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="viewer.js"></script>
+</body>
+</html>

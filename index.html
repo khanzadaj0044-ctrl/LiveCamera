@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Camera Sharing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Live Camera 📸</h1>
+        <p>Share your camera with an authorized viewer.</p>
+
+        <input
+            id="roomCode"
+            type="text"
+            placeholder="Enter room code"
+            autocomplete="off"
+        >
+
+        <video id="camera" autoplay playsinline muted></video>
+
+        <button id="startCamera">Start Sharing</button>
+        <button id="stopCamera" hidden>Stop Sharing</button>
+
+        <p id="message">Enter a room code to begin.</p>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

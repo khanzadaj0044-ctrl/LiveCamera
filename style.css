@@ -1,0 +1,91 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #071b12, #153d2a, #071b12);
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 24px;
+    padding: 25px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+p {
+    color: #c5d5ca;
+    margin-bottom: 20px;
+}
+
+video {
+    width: 100%;
+    min-height: 220px;
+    background: #020704;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background: #78c043;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #62a832;
+    transform: translateY(-2px);
+}
+
+#message {
+    margin-top: 18px;
+    margin-bottom: 0;
+    font-size: 13px;
+}
+
+#roomCode {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0 18px;
+    border: 1px solid #53665a;
+    border-radius: 12px;
+    background: #102218;
+    color: white;
+    font-size: 16px;
+}
+
+button + button {
+    margin-top: 10px;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
